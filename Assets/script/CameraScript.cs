@@ -30,15 +30,4 @@ public class CameraScript : MonoBehaviour
             transform.RotateAround(player.transform.position, transform.right, -angle.y * sensitivity);//33行目をマイナスにすることで動いたことを無かったことにしている。
         }
     }
-    private void OnTriggerStay(Collider collision)
-    {
-        Debug.Log("Ok");
-        Debug.Log(collision.gameObject);//1個1個取り出されてしまう(一つずつの文字列になってる)ので配列として出力したい)
-        if (collision.gameObject.tag == "obtainable")
-        {
-            ObjectName = collision.gameObject.name;
-
-
-        }
-    }
 }
