@@ -30,6 +30,8 @@ public class ItemManager : MonoBehaviour
     {
         for (int i = 0 ; i < needItems.Length ; i++)
         {
+            Debug.Log("“®‚¢‚½‚æ");
+            Debug.Log(needItems.Length);
             if (ItemDatas[ItemIndexDict[needItems[i]]].ItemCount == 0)
             {
                 return false;
